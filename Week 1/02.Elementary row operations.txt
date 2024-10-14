@@ -1,0 +1,78 @@
+Elementary row operations are basic operations that can be performed on the rows of a matrix to simplify it while keeping the solution to the corresponding system of linear equations unchanged. These operations are fundamental tools in matrix methods for solving systems of linear equations, such as Gaussian elimination and finding the inverse of a matrix.
+
+There are three types of elementary row operations:
+
+1. Row Switching (Interchanging)
+
+Operation: Swap two rows in the matrix.
+Notation: Ri <-> Rj, where Ri and Rj are the i-th and j-th rows.
+
+Example: If the matrix is
+[
+    [1, 2],
+    [3, 4]
+]
+
+and you swap row 1 with row 2, the result is
+
+[
+    [3, 4],
+    [1, 2]
+]
+
+2. Row multiplication (Scalling)
+
+Operation: Multiply all elements of a row by a non-zero scalar.
+Notation Ri -> c*Ri, where c is non-zero scalar.
+Example:
+
+[
+    [1, 2],
+    [3, 4]
+]
+
+and you multiply row 1 by 3, the result is
+
+[
+    [3, 6],
+    [3, 4]
+]
+
+
+3. Row operations
+
+Operation: Add a multiple of one row to another row.
+Notation: Ri + cRj -> Ri where c is a scalar,is the row being modified, and is the row used in the operation.
+
+[
+    [1, 2],
+    [3, 4]
+]
+
+and you add 2 times row 1 to row 2, the result is
+
+
+[
+    [1, 2],
+    [5, 8]
+]
+
+------------------------------------------
+
+Why Use Elementary Row Operations?
+
+1) Solve Systems of Linear Equations: Through methods like Gaussian elimination and Gauss-Jordan elimination, matrices can be reduced to a simpler form to find the solutions.
+
+2) Find the Inverse of a Matrix: Row operations can help convert a matrix into the identity matrix while performing the same operations on an identity matrix to find the inverse.
+
+3) Determine Matrix Rank: Simplifying a matrix using row operations can reveal the rank, which indicates the number of linearly independent rows.
+
+These operations are powerful because they transform a matrix without changing the solution set of the associated linear system.
+
+
+
+
+
+
+
+

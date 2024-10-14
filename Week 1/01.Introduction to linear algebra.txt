@@ -7,3 +7,41 @@ What Are Systems of Linear Equations?
 A system of linear equations is a collection of two or more linear equations involving the same set of variables. Each equation represents a line (in two dimensions), a plane (in three dimensions), or a hyperplane (in higher dimensions). The goal is to find the values of the variables that satisfy all the equations simultaneously.
 
 Linear equation's system must consist of only linear equations.
+
+----------------------------------------
+
+What is matrix and how to represent system of linear equations as matrix?
+
+A matrix is a rectangular array of numbers arranged in rows and columns. Each number in the matrix is called an element. Matrices are used to represent and solve systems of linear equations, perform transformations in computer graphics, and many other applications in various fields of science and engineering.
+
+Imagine we have system with 3 linear equations like that:
+
+3x - 2y + 8z = 7
+x + 6y - z = 10
+3x - z = 5
+
+Matrix for this:
+(Ax = b version)
+ _      _
+|3  -2  8|   |x|   | 7 |
+|1  6  -1| * |y| = | 10|
+|3  0  -1|   |z|   | 5 |
+ _      _
+
+For the matrix, always the number of rows show the number of equations in the system and the number of columns represents the number of variables in the system.
+
+There is another way to show system of linear equations with matrix, it is called (Augmented matrix):
+
+ _       _
+|3  -2| 5 |
+|1   1| 4 |
+|3   1| 6 |
+ _       _
+
+Here we do not write the variable names and merge two matrix.
+
+This matrix refers:
+
+3x - 2y = 5
+x + y = 4
+3x + y = 6

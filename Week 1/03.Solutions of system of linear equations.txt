@@ -1,0 +1,15 @@
+First of all according to some criterias, the methods to solve systems can vary.
+
+There are two branches of solutions:
+
+1) If the count of the equations are equal to the count of the variables, these are the methods to solve the system:
+    1) Gauss eliminating method 
+    2) Gauss-Jordan eliminating method 
+    3) Cramer method (using determinants)
+    4) A^(-1) method (using inverse matrix)
+    5) Row echelon method
+    6) Row eliminated echelon method 
+
+2) If the count of the equations are not equal to the count of the variables, these are the methods to solve the system:
+    1) Row echelon method
+    2) Row eliminated echelon method 

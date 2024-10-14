@@ -1,0 +1,178 @@
+In the system of linear equations, if the count of the equations are equal to the count of the variables, we can use this method here.
+
+If we have system proper to this rule, we should track these steps to be able to solve the system:
+
+1. We need to write the system as Augmented matrix.
+2. Using elementar row operations, we need to make the part low of the diagonal all zero.
+
+So at the last, something like that should appear:
+
+[
+    [1, 2, 3]|[12],
+    [0, 5, 9]|[7],
+    [0, 0, 7]|[26]
+]
+
+An Example:
+
+[
+    [2, 1] | [10],
+    [1, 3] | [8]
+]
+Using row operation of (-0.5R1 + R2 -> R2), we will get:
+[
+    [2, 1]  |10,
+    [0, 2.5]|3
+]
+
+
+-----------------------------------
+
+Example:
+
+[
+    [2, 8, 2] {14},
+    [1, 6, -1] {13},
+    [2, -1, 2] {5}
+]
+
+(Important rule: While making the elements zero, we need to start it from the first column to the last.
+To make zero, the elements of the first columns, we need to use the first row, and for the second columns, we should use the second row)
+
+Let's start. 
+
+-0.5*R1 + R2 -> R2 
+[
+    [2, 8, 2] {14},
+    [0, 2, -2] {6},
+    [2, -1, 2] {5}
+]
+To make (0, 2) zero, we can use:
+-R1 + R3 -> R3 
+[
+    [2, 8, 2] {14},
+    [0, 2, -2] {6},
+    [0, -9, 0] {-9}
+]
+
+The first column is ok, let's go to the second column:
+4.5*R2 + R3 -> R3
+
+[    x  y  z
+    [2, 8, 2] {14},
+    [0, 2, -2] {6},
+    [0, 0, -9] {18}
+]
+
+The method finished, let's find the roots.
+-9z = 18; z = -2
+
+2y - 2z = 6; y = 1
+
+2x + 8 - 4 = 14; x = 5
+
+(x, y, z) = {5, 1, -2}
+
+
+-----------------------------------
+
+Another example:
+
+[
+    [1, 2, -4] {6},
+    [2, -1, 1] {5},
+    [0, 3, 1] {8}
+]
+
+Let's start to make the first column zero!
+
+-2R1 + R2 -> R2 
+
+[
+    [1, 2, -4] {6},
+    [0, -5, 9] {-7},
+    [0, 3, 1] {8}
+]
+
+Let's make the second column zero!
+
+0.6R2 + R3 -> R3 
+
+[
+    [1, 2, -4] {6},
+    [0, -5, 9] {-7},
+    [0, 0, 6.4] {-3.4}
+]
+
+The method has finished. The process after easy to solve.
+
+-----------------------------------
+
+The same method to solve 4x4 matrix:
+
+Example:
+
+[
+    [2, 1, -1, 2] {5},
+    [4, 5, -3, 6] {9},
+    [-2, 5, -2, 6] {4},
+    [4, 11, -4, 8] {2}
+]
+
+Let's start to make the first column zero!
+
+-2R1 + R2 -> R2
+
+[
+    [2, 1, -1, 2] {5},
+    [0, 3, -1, 2] {-1},
+    [-2, 5, -2, 6] {4},
+    [4, 11, -4, 8] {2}
+]
+
+R1 + R3 -> R3
+
+[
+    [2, 1, -1, 2] {5},
+    [0, 3, -1, 2] {-1},
+    [0, 6, -3, 8] {9},
+    [4, 11, -4, 8] {2}
+]
+
+-2R1 + R4 -> R4 
+
+[
+    [2, 1, -1, 2] {5},
+    [0, 3, -1, 2] {-1},
+    [0, 6, -3, 8] {9},
+    [0, 9, -2, 4] {-8}
+]
+
+-2R2 + R3 -> R3
+
+[
+    [2, 1, -1, 2] {5},
+    [0, 3, -1, 2] {-1},
+    [0, 0, -1, 4] {11}
+    [0, 9, -2, 4] {-8}
+]
+
+-3R2 + R4 -> R4 
+
+[
+    [2, 1, -1, 2] {5},
+    [0, 3, -1, 2] {-1},
+    [0, 0, -1, 4] {11}
+    [0, 0, 1, -2] {-5}
+]
+
+R3 + R4 -> R4 
+
+[
+    [2, 1, -1, 2] {5},
+    [0, 3, -1, 2] {-1},
+    [0, 0, -1, 4] {11}
+    [0, 0, 0, 2] {6}
+]
+
+The method has been done!
