@@ -1,0 +1,9 @@
+Linear algebra is a branch of mathematics that focuses on vectors, vector spaces (or linear spaces), and linear transformations between these spaces. It deals with concepts like matrices, determinants, vector operations, eigenvalues, and eigenvectors, which are fundamental in various fields. Linear algebra provides tools to analyze and solve problems involving linear relationships.
+
+----------------------------------------
+
+What Are Systems of Linear Equations?
+
+A system of linear equations is a collection of two or more linear equations involving the same set of variables. Each equation represents a line (in two dimensions), a plane (in three dimensions), or a hyperplane (in higher dimensions). The goal is to find the values of the variables that satisfy all the equations simultaneously.
+
+Linear equation's system must consist of only linear equations.
