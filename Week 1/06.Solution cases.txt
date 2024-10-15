@@ -1,0 +1,63 @@
+There are three kinds of solution cases in systems of linear equations.
+
+1) Unique solution - When the system just has one solution.
+After Gauss method, if the diagonal itself does not contain any zero, that means, there is just one solution.
+
+2) Infinity solutions - When the system has infinite solutions.
+After Gauss method, if the lowest row is all zero with the result part, that refers, there are infinite solutions.
+
+3) No solution - When the system does not have any solution.
+After Gauss method, if the lowest row (except result part) is all zero, but the result part is something different than zero, that means there is no solution for the system.
+
+------------------------------------------
+
+Example:
+
+[
+    [1, 2, -1] {2},
+    [3, 1, 4] {-1},
+    [2, 5, k] {n}
+]
+What should be k and n, if 
+a) there is just one solution?
+b) there are infinite solutions?
+c) there is no solution?
+
+
+First, we need to use Gauss method, to make the part lower than diagonal zero.
+
+-3R1 + R2 -> R2 
+[
+    [1, 2, -1] {2},
+    [0, -5, 7] {-7}
+    [2, 5, k] {n}
+]
+
+-2R1 + R3 -> R3
+[
+    [1, 2, -1] {2},
+    [0, -5, 7] {-7}
+    [0, 1, k+2] {n-4}
+]
+
+0.2R2 + R3 -> R3 
+[
+    [1, 2, -1] {2},
+    [0, -5, 7] {-7}
+    [0, 0, k+3.4] {n-5.4}
+]
+
+a) k != -3.4; n can become any number
+b) k = -3.4 and n = 5.4
+c) k = -3.4 and n != 5.4
+
+-----------------------------------------
+
+How to solve system of linear equations with infinite solutions?
+
+After we find out that the system has infinite solutions, we need to know this:
+we will get an equation for each variable as the solution set.
+
+So, after making the last row completely zero using Gauss method, we can z = k.
+Then puting a to the previous equations, we can get the result for each equation depend on k variable.
+
