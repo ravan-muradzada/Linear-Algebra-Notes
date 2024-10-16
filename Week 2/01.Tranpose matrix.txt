@@ -1,0 +1,37 @@
+A transpose matrix, denoted as A^T, is formed by swapping the rows and columns of the original matrix A. In other words, the element at position (i,j) in the original matrix becomes the element at position  (j,i) in the transposed matrix.
+
+Example:
+
+A = 
+[
+    [1, 2, 3, 4],
+    [9, 3, -1, -5],
+    [8, 0, 2, 6]
+]
+
+A^T =
+[
+    [1, 9, 8],
+    [2, 3, 0],
+    [3, -1, 2],
+    [4, -5, 6]
+]
+
+
+Properties of the Transpose
+1) (A^T)^T = A 
+2) (A + B)^T = A^T + B^T 
+3) (A*B)^T = B^T * A^T 
+4)(cA^T) = cA^T (c is scalar)
+
+Why Use Transpose?
+
+The transpose is often used in various mathematical and computational applications, such as:
+
+-Switching between row vector and column vector representations.
+
+-Symmetric matrices (where A = A^T)
+
+-Solving linear equations and optimizing algorithms.
+
+-Data transformations in computer graphics and machine learning.

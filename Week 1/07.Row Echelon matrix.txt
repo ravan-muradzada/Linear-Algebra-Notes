@@ -1,0 +1,144 @@
+An echelon matrix is a matrix that has been transformed to a form where it follows certain conditions that make solving linear systems of equations easier. There are two main types of echelon forms in linear algebra: row echelon form (REF) and reduced row echelon form (RREF). Both forms are used to simplify matrices for solving linear equations, determining rank, or finding inverses.
+Row-echelon method can help us to solve both in case the number of equations is equal to the number of variables and vice-versa.
+
+1) Leading Entry Condition: The first non-zero number in each row (from left to right) is called the leading entry (pivot) and must be 1.
+
+2) Zeros Below the Leading Entry: All entries below the leading entry in each column must be zeros.
+
+3) Staircase Pattern: Each leading entry is to the right of the leading entry in the row above, forming a staircase-like pattern down the matrix.
+
+4) Zero Rows at the Bottom: Any rows that are completely zero should be at the bottom of the matrix.
+
+Example of a row echelon matrix:
+
+[
+    [1, 2, 3],
+    [0, 1, 4],
+    [0, 0, 1]
+]
+
+
+If the matrix is not in a row echelon form and we are wanted to use this method, we need to use row operations to convert the given matrix to a row echelon matrix form.
+
+When in the system, the number of the equations is not equal to the number of the variables, after converting the given matrix to row-echelon form, we need to find the columns without any pivot and give them some variable names like a, b... And at the last, we need to find the variables of the system according to them.
+--------------------------------------
+
+Example:
+Solve using a row-echelon method to solve the system.
+[
+    [2, -4, 6] {10},
+    [1, 3, -1] {5},
+    [3, -6, 9] {15}
+]
+
+SOLUTION:
+
+The system is not a row-echelon form, thus we need to convert it.
+
+The first element in the second row is 1, so we can swap the first two rows.
+R1 <-> R2
+[
+    [1, 3, -1] {5},
+    [2, -4, 6] {10},
+    [3, -6, 9] {15}
+]
+
+Now, let's convert the part below 1 to zero.
+
+-2R1 + R2 -> R2 
+[
+    [1, 3, -1] {5},
+    [0, -10, 8] {0}
+    [3, -6, 9] {15}
+]
+
+-3R1 + R3 -> R3
+[
+    [1, 3, -1] {5},
+    [0, -10, 8] {0}
+    [0, -15, 12] {0}
+]
+
+
+Now let's convert -10 in the second row to 1.
+
+R2 -> -0.1R2
+[
+    [1, 3, -1] {5},
+    [0, 1, -0.8] {0}
+    [0, -15, 12] {0}
+]
+
+
+Let's convert -15 to zero.
+
+15R2 + R3 -> R3
+[
+    [1, 3, -1] {5},
+    [0, 1, -0.8] {0}
+    [0, 0, 0] {0}
+]
+There are infinite solutions here.
+
+z = k
+
+y - 0.8k = 0; y = 0.8k
+x + 3y - k = 5; x + 2.4k - k = 5; x + 1.4k = 5; x = 5-1.4k
+
+(x, y, z) = (5-1.4k, 0.8k, k)
+
+--------------------------------------
+
+Example:
+
+[
+    [1, -3, 1, 2] {10},
+    [1, -3, 2, 1] {8},
+    [2, -6, 2, 4] {20}
+]
+
+The first element of the first row is already 1, so we need just make the below part zero.
+
+-R1 + R2 -> R2 
+-2R1 + R3 -> R3 
+[
+    [1, -3, 1, 2] {10},
+    [0, 0, 1, -1] {-2}
+    [0, 0, 0, 0] {0}
+]
+
+The system has infinite solutions.
+
+(x1, x2, x3, x4)
+
+x2 = a; x4 = b 
+
+x3 - b = -2; x3 = b-2
+
+x1 - 3x2 + x3 + 2x4 = 10
+x1 - 3a + b-2 + 2b = 10
+x1 - 3a + 3b = 12
+x1 = 12 + 3a - 3b
+
+--------------------------------------
+
+Example:
+
+[
+    [1, 1, 1, -1] {1},
+    [0, 1, 0, -1] {4/3},
+    [0, 0, 0, 1] {-10/9}
+]
+The given matrix is already in a row-echelon form, now we just need to find the solution list.
+For the third column (the variable z), there is no pivot, so we can say z = k.
+
+And let's continue:
+0x + 0y + 0k + t = -10/9
+t = -10/9
+
+y - t = 4/3; y + 10/9 = 4/3; y = 2/9
+
+x + 2/9 + k + 10/9 = 1
+x = -k - 1/3
+
+(x, y, z) = (-a-1/3, 2/9, -10/9)
