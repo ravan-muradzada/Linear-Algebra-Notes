@@ -1,9 +1,0 @@
--Introduction. Triangular Factors and GaussianTransformation Method. Matrix Operations. Algebraic properties of matrix operations.
-
--Inverses and Transposes.
-
--Solving the System of Equations by using the Inverse of a Matrix.
-
--Equivalent matrices. LU-factorization.
-
--Vector Spaces and Subspaces.
