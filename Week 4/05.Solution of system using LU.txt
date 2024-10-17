@@ -1,0 +1,53 @@
+I we are given a system of linear equations, we can find its result list using LU-factorization.
+For that, first of all we need to write the equation itself as matrix.
+
+Then we need to use LU-factorization method on it and find L and U.
+
+I will an example and will explain the process on that:
+
+Imagine, after the LU-factorization process, we have got:
+L = [
+    [1, 0, 0],
+    [2, 1, 0],
+    [3, 4, 1]
+]
+
+U = [
+    [2, 2, 2],
+    [0, 3, 3],
+    [0, 0, 4]
+]
+Let's say result matrix is like that: [[12], [24], [12]]
+
+So we can substitute the main matrix with L and U. 
+
+A * [[x], [y], [z]] = [[12], [24], [12]]
+
+L * U * [[x], [y], [z]] = [[12], [24], [12]]
+
+Here we need to substitute 
+this part: 
+U * [[x], [y], [z]]
+with another matrix like [[a1], [a2], [a3]]
+and put it there.
+
+Then we should multiply L with that like:
+
+[
+    [1, 0, 0],
+    [2, 1, 0],
+    [3, 4, 1]
+]
+*
+[[a1], [a2], [a3]]
+=
+[[12], [24], [12]].
+
+After this process, we get:
+a1 = 12; a2 = 0; a3 = -24.
+
+Then we can write something like that:
+
+U * [[x], [y], [z]] = [[a1], [a2], [a3]]
+
+We now U and its result part. Just using again multiplication of U and [[x], [y], [z]], we can easily solve the problem.

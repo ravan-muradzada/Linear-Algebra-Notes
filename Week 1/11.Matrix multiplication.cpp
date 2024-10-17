@@ -21,17 +21,16 @@ vector<vector<int>> multiplyMatrices(vector<vector<int>>& m1, vector<vector<int>
 
 int main(){
     vector<vector<int>> m1 = {
-        {3, 4, -1},
-        {2, -5, 2},
-        {4, -5, 8},
-        {9, 12, -3}
-    }; // m x n (m = 4, n = 3)
+        {1, 0, 0},
+        {-2, 1, 0},
+        {3, 5, 1},
+    }; 
 
     vector<vector<int>> m2 = {
-        {7, 8},
-        {3, -4},
-        {12, -3}
-    }; // n x k (n = 3, k = 2)
+        {1, 2, -3},
+        {0, -1, 7},
+        {0, 0, -31}
+    }; 
 
     auto result = multiplyMatrices(m1, m2);
 

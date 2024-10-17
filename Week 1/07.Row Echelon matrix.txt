@@ -21,6 +21,7 @@ Example of a row echelon matrix:
 If the matrix is not in a row echelon form and we are wanted to use this method, we need to use row operations to convert the given matrix to a row echelon matrix form.
 
 When in the system, the number of the equations is not equal to the number of the variables, after converting the given matrix to row-echelon form, we need to find the columns without any pivot and give them some variable names like a, b... And at the last, we need to find the variables of the system according to them.
+
 --------------------------------------
 
 Example:

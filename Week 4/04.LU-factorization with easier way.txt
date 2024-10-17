@@ -1,0 +1,48 @@
+To use LU factorization, actually we have easier way.
+So, instead of finding the elementary matrices and working on them, we can just find directly L and U.
+(We can use this method only we do not need to swap the rows while getting Gauss form).
+A = L * U 
+
+First, we need to find U.
+To find U, we need to make the lower part of the main diagonal zero.
+
+To find out L, first we create new matrix with the size of the given matrix and fill main diagonal with ones, and the part above this diagonal with zeros.
+While the process our goal is filling lower part.
+For that, we just need to follow the ways while finding U.
+To make zero any element in U matrix, we need to use row multiplication and addition. Here we need to put the inverse of coefficent to L matrix.
+After the process, if any element is not found for L, we put 0 for here.
+-------------------------------------
+
+Example:
+
+A = [
+    [1, 2, 3],
+    [2, 4, 7],
+    [3, 6, 10]
+]
+
+Let's find U.
+
+[
+    [1, 2, 3],
+    [2, 4, 7],
+    [3, 6, 10]
+]
+
+-2R1 + R2 -> R2 
+-3R1 + R3 -> R3
+
+[
+    [1, 2, 3],
+    [0, 0, 1],
+    [0, 0, 1]
+]
+We have found U matrix.
+
+L matrix is like that:
+
+[
+    [1, 0, 0],
+    [2, 1, 0],
+    [3, 0, 1]
+]

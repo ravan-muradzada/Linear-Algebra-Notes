@@ -6,8 +6,8 @@ A is our matrix
 1) A * x = b
 2) Find A^-1
 3) Multiply each part with A^-1:
-A^-1 * A * x = b * A^-1
-x = b * A^-1 
+    A^-1 * A * x = b * A^-1
+    x = b * A^-1  # The main formula
 
 ---------------------------------------------
 

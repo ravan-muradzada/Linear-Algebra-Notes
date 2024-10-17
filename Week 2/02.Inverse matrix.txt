@@ -18,6 +18,7 @@ Properties of Inverse Matrices
 3) (A^-1)^T = (A^T)^-1 
 4) I^-1 = I
 
+If we have two matrices (A * B), and we want to determine whether they are inverse of each other we need multiply them with each other. In case, A * B = I and B * A = I, that refers they are inverse version of each other.
 
 Why Are Inverse Matrices Important?
 

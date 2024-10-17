@@ -1,6 +1,9 @@
 This matrix form is very similar to row-echelon matrix.
 A difference is that after converting the given matrix to the row-echelon form, we just need to make zero the parts above the pivots.
 
+Note:
+There is no rule that all columns in a matrix's reduced row echelon form (RREF) must have a pivot.
+
 ---------------------------------------
 
 Example:
