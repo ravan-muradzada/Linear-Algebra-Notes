@@ -1,0 +1,62 @@
+A subspace is a subset of a vector space that is itself a vector space under the same operations of addition and scalar multiplication. In other words, if you have a vector space V, a subset W of V is called a subspace if W satisfies all the properties required for a vector space.
+
+
+Conditions for a Subset to Be a Subspace
+
+For a subset W ⊆ V to be considered a subspace of the vector space V, it must meet the following conditions:
+
+1.Non-emptiness (contains the zero vector): The subset W must include the zero vector of the vector space V. This means that 0∈W.
+
+2.Closure under addition: If two vectors u and v belong to W, then their sum u+v must also belong to W.
+
+3.Closure under scalar multiplication: If a vector u belongs to W, and c is any scalar from the field over which the vector space is defined, then the product cu must also belong to W.
+
+If these three conditions are satisfied, then W is indeed a subspace of V.
+
+
+Example of a Subspace
+
+1. Zero subspace 
+The set containing only the zero vector, W={0}, is always a subspace of any vector space V. It satisfies all three conditions trivially.
+
+2.Real Coordinate Space(R^3)
+
+Consider V = R^3, which is the space of all 3-dimensional vectors.
+The set of all vectors of the form (x,0,0), where x is any real number, it is a subspace ofIt includes the zero vector (0,0,0), and it is closed under addition and scalar multiplication.
+
+3.Set of Polynomials:
+
+Let V be the space of all polynomials of degree less than or equal to 3.
+The set of all polynomials of degree exactly 2 is a subspace of V because it satisfies the subspace conditions.
+
+
+--------------------------------------------
+
+Importance of Subspaces
+
+Subspaces help to analyze vector spaces by breaking them down into simpler, more manageable parts. They are central to concepts such as:
+
+-Linear combinations: A subspace can be thought of as the set of all linear combinations of some vectors.
+-Span and Basis: The span of a set of vectors is a subspace. The basis of a vector space is a set of vectors whose span equals the entire vector space.
+-Dimension: A subspace has a dimension that is less than or equal to the dimension of the original vector space.
+
+
+--------------------------------------------
+
+
+Testing a Set for Being a Subspace
+
+To determine whether a given set is a subspace, verify if it:
+
+-Contains the zero vector.
+-Is closed under addition (check if adding two vectors from the set still results in a vector within the set).
+-Is closed under scalar multiplication (check if multiplying any vector from the set by a scalar results in a vector within the set).
+
+
+If all these conditions are met, the set is indeed a subspace of the given vector space.
+
+
+
+
+
+

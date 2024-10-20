@@ -1,0 +1,26 @@
+A vector space (or linear space) is a fundamental concept in linear algebra. It is a collection of objects called vectors, which can be added together and multiplied (or "scaled") by numbers, known as scalars. Scalars typically belong to a field such as real numbers (R) or complex numbers (C).
+Vector spaces are essential for understanding various areas of mathematics, physics, computer science, and engineering.
+
+Key Properties of a Vector Space
+
+A set V with two operations, vector addition and scalar multiplication, forms a vector space if the following conditions (axioms) hold:
+
+1.Closure under addition: For any two vectors u and v in V, their sum is also in V.
+
+2.Closure under scalar multiplication: For any scalar c and vector u in V, the product cu is also in V.
+
+3.Commutativity of addition: For all vectors u and v in V, u + v = v + u.
+
+4.Associativity of addition: For all vectors u, v and w in V, (u+v) + w = u + v + w 
+
+5.Additive identity: There exists a vector 0 in V such that u + 0 = u for all u in V.
+
+6.Additive inerse: For each vector u in V, there exists -u in V such that u + (-u) = 0.
+
+7.Compatibility with scalar multiplication: For any scalar a and b, and vector u, (a*b)*u = a * (b*u).
+
+8.Identity element of scalar multiplication: For every vector u, l*u = u 
+
+9.Distributivity of scalar multiplication with respect to vector addition: For any scalar a and vectors u and v, a*(v+u) = a*v + a*u 
+
+10.Distributivity of scalar multiplication with respect to scalar addition: For any scalars a and b , and vector u, (a + b)*u = a*u + b*u.

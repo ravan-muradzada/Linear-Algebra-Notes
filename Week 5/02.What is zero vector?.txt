@@ -1,0 +1,14 @@
+The zero vector is a special vector in a vector space that has all of its components equal to zero. It serves as the additive identity in the vector space, meaning that when you add the zero vector to any other vector, the result is the original vector.
+
+In the context of a vector space V, the zero vector is denoted by 0.
+
+For a vector space over R^n, the zero vector is written as (0,0,…,0), where all n components are zero.
+
+
+The zero vector plays a fundamental role in vector spaces, ensuring that they meet the requirements for closure under addition and scalar multiplication, and providing the basis for defining linear independence and spanning sets.
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+To determine whether the given subset is in subspace of vector or not, we should need to pay attention to these conditions:
+
+1) Zero vector should be in the given subset, so we need to check zero vector for all given subset while determining whether it is space or not.
+
+2) The sum of two candidates should be proper to the condition of the subset.
+(Candidates are proper to the condition of the subset) 
+
+3) The multiplication of scalar and the candidate should be proper to the condition of the subset.
+(Candidates are proper to the condition of the subset) 
+
+-------------------------------------------
+
+Example 1:
+
+W = {(x, y, z): x+2*y = 0}. The subset is given, determine whether it is subspace of vector space or not.
+
+For the first condition: for (0, 0, 0), the equation is satisfied!
+
+Let's take two candidates of the given subset.
+
+W1 = (x1, y1, z1) ⊆ W -> x1 + 2*y1 = 0
+W2 = (x2, y2, z2) ⊆ W -> x2 + 2*y2 = 0
+
+Let's check the second condition:
+
+W3 = W1 + W2 = (x1+x2, y1+y2, z1+z2).
+Let's check whether W3 is proper to the given subset or not.
+
+x3 + 2*y3 = 
+(x1+x2) + 2*(y1+y2) = 
+x1+x2+2*y1+2*y2.
+If we write it like that:
+(x1+2*y1)+(x2+2*y2), we know the both part is equal to zero, so:
+0 + 0 = 0.
+The second condition is satisfied!
+
+
+Let's check the third condition.
+
+We take a candidate:
+W1 = (x1, y1, z1) ⊆ W -> x1 + 2*y1 = 0
+scalarNum = c 
+
+W2 = c*W1 = (cx1, cy1, cz1) 
+Let's check whether W2 is proper to the given subset or not.
+
+x2 + 2*y2 = cx1 + 2*cy1.
+Let's write it like:
+
+c * (x1 + 2*y1) = c * 0 = 0.
+The third condition is satisfied.
+
+Now we can say the given subset is a subspace of vector space.
+
+
+
+
+Example 2:
+
+W = {(x, y, z): x+2y = 3}. The subset is given, determine whether it is subspace of vector space or not.
+
+For (0, 0, 0): 0 + 2*0 = 0, the first condition is satisfied!
+
+W1 = (x1, y1, z1) ⊆ x1 + 2*y1 = 3
+W2 = (x2, y2, z2) ⊆ x2 + 2*y2 = 3
+
+W3 = W1 + W2 = (x1+x2, y1+y2, z1+z2)
+
+Checking:
+x1+x2 + 2*y1+2*y2 = (x1+2*y1)+(x2+2*y2) = 3 + 3 = 6.
+The second condition is not satisfied, so the subset is not subspace.
+
+
+
+
+Example 3:
+
+W = {(x, y, z): x*y*z = 0} The subset is given, determine whether it is subspace of vector space or not.
+
+The first condition: 0*0*0 = 0. 
+
+W1 = (x1, y1, z1) ⊆ x1*y1*z1=0
+W2 = (x2, y2, z2) ⊆ x2*y2*z2=0
+
+W3 = W1 + W2 = (x1+x2, y1+y2, z1+z2)
+
+(x1+x2)*(y1+y2)*(z1+z2) = 
+x1y1z1 + x1y1z2 + x1y2z1 + x1y2z2 + x2y1z1 + x2y1z2 + x2y2z1 + x2y2z2.
+Never we can know whether the result is 0 or not. Thus it cannot be defined whether the subset is subspace or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
