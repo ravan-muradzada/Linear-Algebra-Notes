@@ -1,0 +1,125 @@
+In linear algebra, a basis is a set of vectors that satisfies two main properties:
+
+1. Linear Independence:
+
+The vectors in the basis must be linearly independent. This means that no vector in the basis can be expressed as a linear combination of the others. In simple terms, each vector adds a new dimension to the space.
+
+2. Span 
+
+The vectors in the basis must span the vector space. This means that any vector in the space can be expressed as a linear combination of the basis vectors. In other words, you can reach any point in the space by combining the basis vectors with appropriate coefficients (scalars).
+
+
+Example of Basis:
+
+
+-In R^2:
+
+A common basis for R^2 is the set {(1, 0), (0, 1)}.
+Linear Independence: Neither vector can be made from the other.
+Span: Any vector (x, y) in R^2 can be expressed as x * (1, 0) + y * (0, 1).
+
+-In R^3:
+
+A common basis for R^3 is the set {(1, 0, 0), (0, 1, 0), (0, 0, 1)}.
+Linear Independence: Each vector points in a different direction (x, y, z axes).
+Span: Any vector (x, y, z) in R^3 can be expressed as x * (1, 0, 0) + y * (0, 1, 0) + z*(0, 0, 1).
+
+
+---------------------------------------------
+
+
+Example 1:
+
+Check whether the set: S = {(1, 2), (3, 4)} is basis or not in V = R^2 ?
+
+Let's check whether the set spans the space or not.
+
+Let's take (a, b).
+
+c1 * (1, 2) + c2 * (3, 4) = (a, b)
+
+c1 + 3c2 = a
+2c1 + 4c2 = b
+
+-2c1 - 6c2 = -2a
+2c1 + 4c2 = b
+
+-2c2 = -2a + b 
+so, c2 = -a + b/2
+
+if we put it, we will get:
+c1 = a - 3c2 = (-4a + 3b) / 2.
+
+We found c1 and c2, so it spans the space.
+
+
+Now, let's check whether the set is linearly independent or not.
+
+c1 * (1, 2) + c2 * (3, 4) = 0
+
+c1 + 3c2 = 0
+2c1 + 4c2 = 0
+
+-2c1 - 6c2 = 0
+2c1 + 4c2 = 0
+
+-2c2 = 0; c2 = 0.
+
+If we put it,
+c1 = -3c2 = 0.
+
+Because c1 = c2 = 0, the equation is linearly independent.
+
+So we can easily say that the set makes the basis in R^2.
+
+
+--------------------------------------------
+
+
+Example 2:
+
+S = {t^2 + 1, t-1, 2t + 2} in P2, determine the set is basis or not.
+
+c1 * (t^2 + 1) + c2 * (t-1) + c3 * (2t+2) = a*t^2 + b*t + c 
+
+c1 * t^2 + c1 + c2 * t - c2 + 2*c3*t + 2*c3 = a * t^2 + b*t + c 
+
+c1 = a 
+c2 + 2*c3 = b 
+c1 - c2 + 2*c3 = c 
+
+In the third equation, 
+a - c2 + 2*c3 = c 
+-c2 + 2*c3 = c-a
+
+-c2 + 2*c3 = c-a
+c2 + 2*c3 = b
+
+4*c3 = c-a+b 
+c3 = (c-a+b)/4
+
+c2 = b - 2*c3 = (b-c+a)/2
+
+The set of S spans the space.
+
+
+Let's find linearly independence.
+
+c1 * t^2 + c1 + c2 * t - c2 + 2*c3*t + 2*c3 = 0
+
+c1 = 0
+c2 + 2*c3 = 0 
+c1 - c2 + 2*c3 = 0 -> -c2 + 2*c3 = 0
+
+c2 + 2*c3 = 0 
+-c2 + 2*c3 = 0
+
+4*c3 = 0 -> c3 = 0
+
+c2 = -2*c3 = 0.
+
+c1 = c2 = c3 = 0.
+
+That means the set is linearly independent.
+
+So the set arranges basis in P2.

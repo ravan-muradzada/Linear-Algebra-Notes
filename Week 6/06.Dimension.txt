@@ -1,0 +1,4 @@
+In linear algebra, the dimension of a vector space refers to the number of vectors in a basis for that space. A basis is a set of linearly independent vectors that span the vector space. The dimension essentially tells you the minimum number of coordinates needed to specify any vector within the space.
+
+So imagine we have the set like S = {v1, v2, v3}. Let's assume this set is basis on R^3 space.
+So, the length of this set is the dimension of a vector space. (Here the dimension is 3).

@@ -1,0 +1,79 @@
+In linear algebra, the span of a set of vectors is the collection of all possible linear combinations of those vectors. It represents all the points that can be reached by scaling and adding the given vectors together.
+
+-The span of a set of vectors is the space that these vectors "cover" when combined in all possible ways using linear combinations.
+
+-If you have a single vector, its span is a line through the origin in the direction of that vector.
+
+-If you have two vectors, their span can form a plane (if the vectors are linearly independent).
+
+-For three vectors in three-dimensional space, their span could either be a plane or fill the entire space, depending on whether they are linearly independent.
+
+---------------------------------------------
+What does it mean: "To find span of vectors"?
+
+That means, we express the vectors as lienar combination format. So imagine, we have two vectors: 
+v1 = (1, 0, 3) and v2 = (7, 1, 0). If we want to find their span, we can just write something like that:
+
+c1 * v1 + c2 * v2 = c1 * (1, 0, 3) + c2 * (7, 1, 0) = {c1 + 7c2, c2, 3c1}.
+
+So the span is {c1 + 7c2, c2, 3c1}.
+
+We can write is also using matrix:
+[
+    [1, 7],
+    [0, 1],
+    [3, 0]
+]
+
+------------------------------------------
+
+For R^2 space, the span set should have at least two vectors and each vector's size should be 2.
+
+R^3 space is similar to that. At least three vectors and the size should be 3.
+
+After these, we can dive into and check the span.
+
+How can we check it?
+
+First we need to get an arbitrary vector which fits to the size of current vector space.
+
+Then we need to find the c1, c2 ... cn values, which make the sum of the vectors to this arbitrary vector.
+
+
+Example 1:
+
+S = {(1, 2), (-1, 1)}. V = R^2
+
+Let's take (a, b) from R^2.
+
+Let's search for c1 and c2.
+
+c1 * (1, 2) + c2 * (-1, 1) = (a, b)
+
+c1 - c2 = a 
+2c1 + c2 = b 
+
+3c1 = a + b; c1 = (a+b) / 3
+
+c2 = (b-2a) / 3
+
+Because we found values for c1 and c2, that means the set spans the space.
+----------------------------------
+
+Example 2:
+
+S = {(2, 4), (-1, -2)} V = R^2.
+
+(a, b)
+
+c1 * (2, 4) + c2 * (-1, -2) = (a, b)
+
+2c1 - c2 = a 
+4c1 - 2c2 = b 
+
+2c1 - c2 = a 
+-2c1 + c2 = b 
+
+a + b = 0.
+
+Because we cannot find the values for c1 and c2, the set does not span the space.

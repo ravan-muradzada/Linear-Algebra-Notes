@@ -1,0 +1,45 @@
+A linear combination is an expression that involves multiplying vectors by scalars (real or complex numbers) and then adding the results together. In a vector space, a linear combination represents a way to generate new vectors using a set of given vectors and scalar coefficients.
+
+Definition of Linear Combination
+
+Given a set of vectors v1, v2, .., vn in a vector space V, and scalars c1, c2, .., cn the expression:
+
+c1v1 + c2v2 + .. + cnvn
+
+s called a linear combination of the given vectors.
+
+-The scalars are called coefficients.
+-The given vectors are called basis vectors.
+
+--------------------------------------------
+
+Example:
+
+The vectors are given: v1=(2,1,-3); v2=(3,1,5); v3=(0,2,4). Show that w=(3,-4,5) is linear combination of the given vectors.
+
+w = c1v1 + c2v2 + c3v3
+
+c1*(2,1,-3) + c2*(3,1,5) + c3*(0,2,4) = (3,-4,5)
+
+Calculating the equation we can find c1, c2 and c3.
+
+--------------------------------------------
+
+Why Are Linear Combinations Important?
+
+Linear combinations are fundamental in linear algebra because they help define many key concepts, such as:
+
+-Span:
+The set of all possible linear combinations of a set of vectors forms the span of those vectors. If the span covers the entire vector space, the vectors are said to span the vector space.
+
+-Linear Independence:
+A set of vectors is linearly independent if the only way to obtain the zero vector as a linear combination is by setting all coefficients to zero. Otherwise, the vectors are linearly dependent.
+
+-Basis and Dimension:
+A basis of a vector space is a set of linearly independent vectors whose span is the entire space. The dimension of the vector space is the number of vectors in a basis.
+
+-Solving Systems of Linear Equations:
+Systems of linear equations can be interpreted as finding linear combinations of vectors that satisfy certain conditions.
+
+
+Linear combinations are essential for understanding vector spaces, solving linear equations, and many applications in mathematics, physics, engineering, and computer science.

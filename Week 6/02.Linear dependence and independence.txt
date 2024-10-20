@@ -1,0 +1,106 @@
+Linear dependence and linear independence are concepts used to determine the relationships between vectors in a vector space. These concepts help to understand whether a set of vectors can be expressed as a combination of each other or not.
+
+Linear Dependence
+
+A set of vectors v1, v2, .., vn in a vector space V is said to be linearly dependent if there exists a non-trivial solution to the equation:
+
+c1v1 + c2v2 + .. + cnvn = 0.
+
+where at least one of the coefficients ci is not zero.
+
+
+Linear independence:
+
+A set of vectors v1, v2, .., vn in a vector space V is said to be linearly independent if the only solution to the equation
+
+c1v1 + c2v2 + ... + cnvn = 0
+
+is when the scalar coefficients are equal to zero:
+
+c1 = c2 = .. = cn = 0
+
+This means that no vector in the set can be expressed as a linear combination of the other vectors in the set. In other words, each vector adds a new dimension or direction to the vector space.
+
+
+
+In summary, if the equation of c1v1 + .. + cnvn = 0 is true only when c1 = .. = cn = 0, that means that is linear independence.
+Otherwise, if there is another solution for at least one scalar, that is linear dependence.
+
+
+-----------------------------------------
+
+Example 1:
+
+v1 = (1, 1) and v2 = (2, -3) are given, determine whether they are linear dependent or independent.
+
+c*v1 + c2*v2 = 0
+
+(c1, c1) + (2c2, -3c2) = 0
+
+c1 + 2c2 = 0
+c1 - 3c2 = 0.
+
+That is basic system, if we solve it, we will get c1 = c2 = 0 and that means there is linear independence.
+
+
+Example 2:
+
+v1 = (1, 3) and v2 = (2, 6) are given, determine whether they are linear dependent or independent.
+
+c*v1 + c2*v2 = 0
+
+(c1, 3c1) + (2c2, 6c2) = 0
+
+c1 + 2c2 = 0
+3c1 + 6c2 = 0
+
+These equations eleminates each other and this means there are infinite solutions. So that refers, there is linear independence.
+
+
+Example 3:
+
+Determine whether the given set linearly dependent or independent.
+E = {1, 1+x, 1-x, x^2}
+
+c1*1 + c2*(1+x) + c3*(1-x) + c4* (x^2) = 0
+
+c1 + c2 + c2*x + c3 - c3*x + c4*x^2 = 0
+
+We can say that: c1+c2+c3 = 0 and c2* - c3 = 0, so c2 = c3 and c3=0.
+
+so c1 + 2*c2 = 0. We cannot find exact values for c1 and c2, so it cannot be said that this set is linearly independent. 
+So the set is linear dependent, because of the lack of equations.
+
+
+Example 4:
+
+The matrices are given:
+A = [[1, 1], [0, 1]], B = [[-1, 0], [1, 1]], C = [[1, 3], [2, 0]].
+
+c1*A + c2*B + c3*C = [[0, 0], [0, 0]]
+
+c1 - c2 + c3 = 0
+c1 + 3c3 = 0 -> c1 = -3c3
+c2 + 2c3 = 0 -> c2 = -2c3
+c1 + c2 = 0 -> c1 = -c2
+
+If we put them in the first equation:
+
+-3c3 + 2c3 + c3 = 0
+0 = 0, here we can not exactly say c3 is just zero.
+
+But let's imagine c3 = a.
+And we know c1 = -3a and c2 = -2a.
+and also c1 = -c2, so:
+
+-3a = 2a. For that equation, a is only zero. That means c3 = 0 and also c1 = c2 = 0.
+
+Because all are zero, there is linear independence.
+-----------------------------------------
+
+If the matrix version of vector set equation is square matrix, we can use determinant to check whether it is dependent or independent.
+So, if the determinant is 0, there is linear dependence, otherwise independence.
+
+Another solution is with echelon matrix version. So if we write the matrix version of the vector set and convert this matrix to echelon form and in this form if in each column there is a pivot, that refers this set is linearly independent, otherwise dependent.
+
+Note: If the count of given vectors in the sett is more than the size of vector (n in R^n), that means these vectors are linearly dependent.

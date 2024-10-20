@@ -1,0 +1,206 @@
+Example 1:
+
+We are given the vectors: v1=(1, -2, 3, 1); v2 = (-1, 3, 0, 1), v3 = (0, 1, 3, 2). Determine whether the set of vectors is linearly dependent or not.
+
+Solution:
+We will use two methods to check it.
+
+
+First method:
+
+c1*v1 + c2*v2 + c3*v3 = 0
+
+c1 - c2 = 0
+-2c1 + 3c2 + c3 = 0
+3c1 + 3c3 = 0
+c1 + c2 + 2c3 = 0
+
+c1 = c2 
+-2c1 + 3c2 + c3 = 0
+c1 + c3 = 0 -> c1 = -c3 
+c1 + c2 + 2c3 = 0
+
+Using the second equation:
+
+-2c1 + 3c1 - c1 = 0; We cannot say c1 = 0.
+
+Using the fourth equation:
+
+c1 + c1 - 2c1 = 0 -> We cannot say c1 = 0.
+
+We can say the set is linearly dependent.
+
+Second method:
+(Row-echelon)
+
+[
+    [1, -1, 0, 1],
+    [-2, 3, 1, -1],
+    [3, 0, 3, 6],
+    [1, 1, 2, 3]
+]
+
+2*R1 + R2 -> R2 
+-3*R1 + R3 -> R3 
+-R1 + R4 -> R4 
+
+[
+    [1, -1, 0, 1],
+    [0, 1, 1, 1],
+    [0, 3, 3, 3],
+    [0, 2, 2, 2]
+]
+
+
+-3R2 + R3 -> R3 
+-2R2 + R4 -> R4
+
+[
+    [1, -1, 0, 1],
+    [0, 1, 1, 1],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0]
+]
+
+In the third and fourth column there is no pivot, thus that is linear dependent set. 
+
+
+
+---------------------------------------------
+
+
+
+Example 2:
+
+A = [
+    [1, 0],
+    [0, -1]
+]
+
+B = [
+    [1, 0],
+    [1, 2]
+]
+
+C = [
+    [1, 0],
+    [-3, 1]
+]
+
+For matrices, we can use just one method.
+
+c1*A + c2*B + c3*C = 0
+
+c1 + c2 + c3 = 0
+c2 - 3c3 = 0
+-c1 + 2c2 + c3 = 0
+
+And now we need to solve this equation and determine what are c1, c2 and c3.
+To solve this equation, we can use Gauss-elimination method:
+
+[
+    [1, 1, 1],
+    [0, 1, -3],
+    [-1, 2, 1]
+]
+
+R1 + R3 -> R3 
+
+[
+    [1, 1, 1],
+    [0, 1, -3],
+    [0, 3, 2]
+]
+
+-3R2 + R3 -> R3 
+
+[
+    [1, 1, 1],
+    [0, 1, -3],
+    [0, 0, 11]
+]
+
+11c3 = 0, so c3 = 0
+
+c2 + (-3c3) = 0
+c2= 0
+
+c1+c2+c3 = 0
+c1 = 0
+
+This matrices are linearly independence.
+
+
+
+---------------------------------------------
+
+
+Example 3:
+
+v1 = (1, 2, 3, 4), v2 = (0, 1, 0, -1) and v3 = (1, 3, 3, 3). Show that this is linearly dependent. Then write bother vector as linear combination of other two vectors.
+
+The question has two parts.
+
+First part:
+
+c1 + c3 = 0
+2c1 + c2 + 3c3 = 0
+3c1 + 3c3 = 0
+4c1 - c2 + 3c3 = 0
+
+Let's use row-echelon matrix to solve the equation:
+
+[
+    [1, 0, 1],
+    [2, 1, 3],
+    [3, 0, 3],
+    [4, -1, 3]
+]
+
+-2R1 + R2 -> R2 
+-3R1 + R3 -> R3 
+-4R1 + R4 -> R4 
+
+[
+    [1, 0, 1],
+    [0, 1, 1],
+    [0, 0, 0],
+    [0, -1, -1]
+]
+
+R2 + R4 -> R4 
+[
+    [1, 0, 1],
+    [0, 1, 1],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+
+Here c1 and c2 are main variables and c3 is independent variable.
+
+c3 = a 
+
+c2 + c3 = 0; c2 = -a 
+c1 + c3 = 0; c3 = -a
+
+(c1, c2, c3) = (a, -a, -a).
+
+As you can see, there are infinite solutions, so we can say the set of vectors is linearly dependent.
+
+
+Second part:
+
+We already know that:
+(c1, c2, c3) = (-a, -a, a)
+
+c1 * v1 + c2 * v2 + c3 * v3 = 0
+-a * v1 - a * v2 + a * v3 = 0
+
+v1 + v2 - v3 = 0
+
+v1 = v3 - v2 
+v2 = v3 - v1
+v3 = v1 + v2
+
+
+
