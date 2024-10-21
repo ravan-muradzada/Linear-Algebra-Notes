@@ -1,0 +1,114 @@
+The row space of a matrix is the vector space formed by the linear combinations of its row vectors. It represents all possible vectors that can be obtained by taking linear combinations of the rows of the matrix. The row space provides insight into the properties of a matrix, such as its rank and linear dependence or independence of the rows.
+
+If A is the given matrix and [r1, r2, .., rn] are rows in the matrix, we can write this formula:
+
+RowSpace(A) = span{r1, r2, ..., rn}.
+
+-------------------------------------------
+
+How to find out the row space of the given matrix?
+
+
+Firstly we need to write the rows of the matrix as list and then multiply each with ci variable and sum them.
+
+Example: 
+A matrix is given:
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+RowSpace(A) = span([1, 2, 3], [4, 5, 6], [7, 8, 9]) = 
+c1 * [1, 2, 3] + c2 * [4, 5, 6] + c3 * [7, 8, 9].
+
+
+-------------------------------------------
+
+What is the basis of the row space of the given matrix and how to find it?
+
+
+The basis of the row space of a matrix refers to a set of linearly independent row vectors that span the row space. In other words, these vectors form the "building blocks" for the row space, meaning that any row vector in the row space can be expressed as a linear combination of the basis vectors.
+
+The basis of the row space essentially captures the essential linear relationships present in the rows of the original matrix. It tells you which combinations of rows can represent the space formed by all possible linear combinations of the original rows.
+
+
+To find a basis for the row space, we need to convert it to Row-Echelon form. The set of the rows which have a pivot arranges the basis set.
+The non-zero rows in the Row-Echelon form represent linearly independent row vectors.
+
+
+-------------------------------------------
+
+
+Example:
+
+We have a matrix A:
+A = [
+    [1, -2, 0, 0, 3],
+    [2, -5, -3, -2, 6],
+    [0, 5, 15, 10, 0],
+    [2, 6, 18, 8, 6]
+]
+Find the basis of row space of A.
+Find the dimension of the basis.
+
+Solution:
+
+Let's find RRF for the matrix.
+
+[
+    [1, -2, 0, 0, 3],
+    [2, -5, -3, -2, 6],
+    [0, 5, 15, 10, 0],
+    [2, 6, 18, 8, 6]
+]
+
+-2R1 + R2 -> R2 
+-2R1 + R4 -> R4 
+[
+    [1, -2, 0, 0, 3],
+    [0, -1, -3, -2, 0]
+    [0, 5, 15, 10, 0],
+    [0, 10, 18, 8, 0]
+]
+
+
+R2 -> -R2 
+[
+    [1, -2, 0, 0, 3],
+    [0, 1, 3, 2, 0]
+    [0, 5, 15, 10, 0],
+    [0, 10, 18, 8, 0]
+]
+
+-5R2 + R3 -> R3 
+-10R2 + R4 -> R4 
+[
+    [1, -2, 0, 0, 3],
+    [0, 1, 3, 2, 0]
+    [0, 0, 0, 0, 0]
+    [0, 0, -12, -12, 0]
+]
+
+R3 <-> R4 
+[
+    [1, -2, 0, 0, 3],
+    [0, 1, 3, 2, 0],
+    [0, 0, -12, -12, 0],
+    [0, 0, 0, 0, 0]
+]
+
+(-1/12) * R3 -> R3 
+[
+    [1, -2, 0, 0, 3],
+    [0, 1, 3, 2, 0],
+    [0, 0, 1, 1, 0],
+    [0, 0, 0, 0, 0]
+]
+
+
+The matrix is already in RRF.
+The first three rows have pivots, so the basis is 
+{[1, -2, 0, 0, 3], [0, 1, 3, 2, 0], [0, 0, 1, 1, 0]}.
+
+Dimension here is three.

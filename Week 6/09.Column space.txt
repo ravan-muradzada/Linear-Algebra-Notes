@@ -1,0 +1,98 @@
+The column space of a matrix is the set of all possible linear combinations of its column vectors. In other words, it is the subspace of the vector space spanned by the columns of the matrix. The column space represents the range of the matrix when considered as a linear transformation.
+
+If we are given A matrix and col1, col2, .., coln are the columns of the matrix, we can write this formula:
+
+ColumnSpace(A) = span{col1, col2, ..., coln}.
+
+-------------------------------------------
+
+How to find column space of the space?
+
+Example: 
+A matrix is given:
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+ColumnSpace(A) = c1 * [1, 4, 7] + c2 * [2, 5, 6] + c3 * [3, 6, 9].
+
+
+-------------------------------------------
+
+
+What is the basis of the column space of the matrix and how to find it?
+
+The basis of the column space of a matrix is a set of linearly independent column vectors that span the column space. This means that any vector in the column space can be expressed as a linear combination of the basis vectors. 
+To find a basis for the column space, follow these steps:
+
+First, we should convert it to Row-Echelon form.
+The pivot columns here correspond to the original columns of the matrix that are linearly independent.
+The set of the originals of these columns is the basis of the matrix.
+
+Original columns mean that the version of the columns before REF.
+
+-------------------------------------------
+
+
+Example:
+
+A matrix is given:
+
+
+A = [
+    [2, 4, 6, -2, 0],
+    [3, 1, -2, 4, 5],
+    [6, 2, -4, 8, 10]
+]
+Find the basis of the column space of the matrix and find the dimension of the basis.
+
+
+Solution:
+
+First we need to find RRF.
+
+[
+    [2, 4, 6, -2, 0],
+    [3, 1, -2, 4, 5],
+    [6, 2, -4, 8, 10]
+]
+
+0.5R1 -> R1 
+[
+    [1, 2, 3, -1, 0],
+    [3, 1, -2, 4, 5],
+    [6, 2, -4, 8, 10]
+]
+
+-3R1 + R2 -> R2 
+-6R1 + R3 -> R3 
+[
+    [1, 2, 3, -1, 0],
+    [0, -5, -11, 7, 5]
+    [0, -10, -22, 14, 10]
+]
+
+-0.2R2 -> R2 
+[
+    [1, 2, 3, -1, 0],
+    [0, 1, 2.2, -1.4, -1]
+    [0, -10, -22, 14, 10]
+]
+
+10R2 + R3 -> R3 
+[
+    [1, 2, 3, -1, 0],
+    [0, 1, 2.2, -1.4, -1]
+    [0, 0, 0, 0, 0]
+]
+
+The matrix is already in REF.
+
+As you can see the first two columns of the matrix have pivots.
+So, that means the original versions of these columns arrange the basis of the columns space of the matrix:
+
+{[2, 3, 6], [4, 1, 2]}
+
+Its dimension is 2.

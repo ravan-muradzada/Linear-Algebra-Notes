@@ -1,0 +1,18 @@
+The rank of a matrix is the number of linearly independent rows or columns in the matrix. It tells us the dimension of the row space or column space of the matrix (both have the same dimension). In simple terms, the rank measures how much useful information is contained in the matrix.
+
+It is true always: Rank <= rowCount.
+
+There are kinds of rank:
+
+-Full rank: If the rank equals the smaller dimension of the matrix (either the number of rows or columns), the matrix is said to have full rank.
+-Reduced rank: If the rank is less than the smaller dimension, the matrix has deficient rank.
+
+
+-------------------------------------------
+
+
+How to find the rank of the given matrix?
+
+To determine the rank of the matrix, first we need to convert it to row-echelon form.
+Here, the number of the pivots is equal to the rank.
+The rank show the dimension of basis of row space and column space.
