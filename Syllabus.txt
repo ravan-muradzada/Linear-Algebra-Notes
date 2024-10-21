@@ -7,3 +7,5 @@
 -Equivalent matrices. LU-factorization.
 
 -Vector Spaces and Subspaces.
+
+-Solving Ax = 0 and Ax = b. Linear Independence, Basis, and Dimension. The Rank of a Matrix.
