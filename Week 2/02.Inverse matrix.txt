@@ -45,6 +45,19 @@ So something like that should be created and then according to our matrix, we ne
 So we need to convert it actually to identity matrix. For that we will do some row operations and while these operations, the right part of the matrix will change accordingly.
 After we have finished and got the identity matrix in the left part, the right part will be inverse matrix of the given matrix.
 
+--------------------------------------
+
+To find out inverse of 2x2 matrix, we have a formula.
+A = [
+    [a, b],
+    [c, d]
+]
+
+A^-1 = (1/(a*d-b*c)) 
+*
+[[d, -b]
+-c, a]
+
 ------------------------------------------------------------------
 
 Example:
