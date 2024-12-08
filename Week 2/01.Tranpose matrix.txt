@@ -34,4 +34,3 @@ The transpose is often used in various mathematical and computational applicatio
 
 -Solving linear equations and optimizing algorithms.
 
--Data transformations in computer graphics and machine learning.

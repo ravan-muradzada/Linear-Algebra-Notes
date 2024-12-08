@@ -30,7 +30,8 @@ The solution using inverse matrix method:
 * [x,
    y, 
    z] = 
-= [
+= 
+[
     [8],
     [6],
     [10]

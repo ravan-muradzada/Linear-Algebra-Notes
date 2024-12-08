@@ -22,11 +22,7 @@ If we have two matrices (A * B), and we want to determine whether they are inver
 
 Why Are Inverse Matrices Important?
 
--Solving Systems of Linear Equations: In matrix form, a system AX=B can be solved by finding X = A^-1 * B(if A is invertible).
-
--Linear Transformations: In computer graphics and other fields, inverses are used to reverse transformations.
-
--Calculating Projections: In statistics, inverse matrices are used in methods like least squares for fitting models.
+Solving Systems of Linear Equations: In matrix form, a system AX=B can be solved by finding X = A^-1 * B(if A is invertible).
 
 
 ------------------------------------------------------------------
