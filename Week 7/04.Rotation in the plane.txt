@@ -1,0 +1,12 @@
+Rotation in the plane refers to the movement of points in a two-dimensional space around a fixed point, called the center of rotation, by a certain angle. This transformation preserves distances and angles, meaning that the shape and size of objects remain unchanged, but their orientation changes.
+
+If the rotation happens according to origin (0, 0), the matrix for a counterclockwise rotation by an angle θ around the origin in the plane is:
+
+R(θ) = [[cos(θ), -sin(θ)], [sin(θ), cos(θ)]]
+
+If it is according to another point (x, y), we need to multiply R(θ) with [[x], [y]].
+
+
+-----------------
+
+To calculate the point after the rotation, we put the degree of the rotation on θ and then multiply it with [[x], [y]].

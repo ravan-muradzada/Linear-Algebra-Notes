@@ -1,0 +1,68 @@
+Transformation is the change of vector space. If it changes from R^k to R^t, that is transformation.
+
+There is a special type of the transformation and that is called "linear transformation".
+
+First, let's know how the transformation is shown:
+
+Example: T(x, y) = (2x, 3y)
+
+What is linear transformation?
+
+For linear transformation, there are two main rules:
+
+1. T(u+v) = T(u) + T(v)
+2. T(c*u) = c*T(u). Here c is scalar.
+
+Overall process should go like that:
+
+In first, arbitrary values are put and their transformations are summed. Then the sum of themselves is put into the transformation. If they are equal, the first rule is met!
+-------------------------------------
+
+Example 1:
+
+Check whether this is linear transformation:
+
+T(x, y) = (2*x, 3*y)
+
+
+Let's check the first rule:
+
+Let's put two vectors: (x1, y1) and (x2, y2)
+
+T(x1, y1) = (2*x1, 3*y1)
+T(x2, y2) = (2*x2, 3*y2)
+
+T(x1, y1) + T(x2, y2) = (2x1 + 2x2, 2y1 + 2y2)
+and
+T(x1+x2, y1+y2) = (2(x1+x2), 3(y1+y2))
+They are equal, so the first rule is met!
+
+
+
+Let's check the second rule:
+
+c*T(x, y) = c*(2x, 3y) = (2c*x, 3c*y)
+
+T(c*(x,y)) = T(cx, cy) = (2*cx, 3*cy)
+
+They are equal, so the second rule is met!
+
+
+-------------------------------------
+
+Example 2:
+
+T(x, y) = (x^2, y)
+
+First rule:
+T(x1, y1) = (x1^2, y1)
+T(x2, y2) = (x2^2, y2)
+T(x1, y1) + T(x2, y2) = (x1^2 + x2^2, y1^2 + y2^2)
+T(x1+x2, y1+y2) = ((x1+x2)^2, y1+y2)
+
+They are not equal, so this is not linear transformation.
+We do not need to check the second rule, but let's do!
+
+T(cx, cy) = ((cx)^2, cy)
+c*T(x,y) = (c*x^2, cy)
+They are not equal, so the second rule is not met, either.

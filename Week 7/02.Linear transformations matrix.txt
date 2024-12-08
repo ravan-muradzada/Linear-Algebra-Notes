@@ -1,0 +1,32 @@
+A linear transformation matrix is a matrix A that represents a linear transformation T:
+R^n -> R^m 
+T(x) = Ax.
+
+Example 1:
+
+T(x, y) = (2x+y, 3x-4y). Find matrix:
+
+A * [[x], [y]] = [[2x+y], [3x-4y]]
+
+A = [[2, 1], [3, -4]]
+
+-----------------------------
+
+If we are given linear transformation matrix, we can determine linear transformation itself:
+
+A = [[2, 1], [3, -4]]
+
+The x matrix should have the numer of elements the same with the count of the columns in A. (Here it is 2).
+
+T = A * x:
+
+T = [[2, 1], [3, -4]] * [[x], [y]] = [[2x+y], [3x-4y]]
+
+So T(x, y) = (2x+y, 3x-4y)
+
+
+-------------------------------------
+
+If A matrix is given, the number of rows represents the output space R^m and the number of columns represents the input space of R^n.
+R^n -> R^m 
+

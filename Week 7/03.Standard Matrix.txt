@@ -1,0 +1,17 @@
+A standard matrix for a linear transformation is the matrix representation of the transformation with respect to the standard basis vectors of the input and output spaces.
+
+If we are given basis points, we can do smth like that:
+
+T(1, 0) = (2, 3)
+T(0, 1) = (4, 5)
+
+T = [[2, 4], [3, 5]]
+
+If we are given transformation like that:
+
+T(x, y) = (ax+by, cx+dy)
+a, b, c and d are constants.
+
+T = [[a, b], [c, d]]
+That is called standard matrix.
+

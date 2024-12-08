@@ -1,0 +1,43 @@
+1) The area of the triangle whose vertices are (x1, y1), (x2, y2), (x3, y3) is given by:
+
+Area = (+-) 0.5 * det([[x1, y1, 1], [x2, y2, 1], [x3, y3, 1]]).
+
+Here the sign (+-) is chosen to yield a positive area.
+
+-------------------------------------------
+
+2) To determine whether three points: (x1, y1), (x2, y2) and (x3, y3) are collinear or not, this condition should be met:
+
+det([[x1, y1, 1], [x2, y2, 1], [x3, y3, 1]]) = 0.
+
+-------------------------------------------
+
+3) If we are given two points: (x1, y1) and (x2, y2). To find an equation of the line passing through these points, we should calculate this determinant:
+
+det([[x, y, 1], [x1, y1, 1], [x2, y2, 1]]) = 0
+
+Imagine, we are given two points: (2, 4) and (-1 , 3). Let's find an equation of the line:
+
+det([x, y, 1], [2, 4, 1], [-1, 3, 1]) = 0
+
+From here, we find: x - 3y = -10.
+
+-------------------------------------------
+
+4) The volume of tetrahedron whose vertices are (x1, y1, z1), (x2, y2, z2) and (x3, y3, z3) and (x4, y4, z4) is found using this formula:
+
+V = (+-) (1/6) * det([[x1, y1, z1, 1], [x2, y2, z2, 1], [x3, y3, z3, 1], [x4, y4, z4, 1]]).
+
+-------------------------------------------
+
+5) Four points: (x1, y1, z1), (x2, y2, z2) and (x3, y3, z3) and (x4, y4, z4) are coplanar (rectangle) if only if when the determinant is zero:
+det([[x1, y1, z1, 1], [x2, y2, z2, 1], [x3, y3, z3, 1], [x4, y4, z4, 1]]) = 0.
+
+-------------------------------------------
+
+6) If three points are given (x1, y1, z1), (x2, y2, z2) and (x3, y3, z3), to find an equation of the line, we calculate it:
+
+
+det([[x, y, z, 1], [x1, y1, z1, 1], [x2, y2, z2, 1], [x3, y3, z3, 1]]) = 0.
+
+

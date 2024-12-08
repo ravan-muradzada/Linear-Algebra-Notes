@@ -1,0 +1,44 @@
+Determinant is represented using two ways: 1. |A|  or 2. det(A).
+To find a determinant of 2x2 matrix, [[a, b], [c, d]]: ad-bc.
+
+To find a determinant of 3x3 matrix, we can use specific method.
+Example:
+
+[
+    [-7, -10, 4],
+    [3, -9, 2],
+    [7, 1, 2]
+]
+
+We write it like that:
+[
+    [-7, -10, 4] [-7, -10],
+    [3, -9, 2] [3, -9],
+    [7, 1, 2] [7, 1]
+]
+
+Then we write:
+x1 = (-7*(-9)*2) + (-10*2*7) + (4*3*1)
+x2 = (7*(-9)*4) + (1*2*(-7)) + (2*3*(-10))
+
+det(A) = x1 - x2 
+
+
+--------------------------
+
+There is another way to find determinants and it can be used for any type of the square matrices.
+
+It is cofactors method. 
+What is a cofactor?
+
+To find a cofactor of any element of the matrix, we use this formula:
+
+
+A(i,j) = (-1)^(i+j) * M(i,j).
+
+Here M(i,j) is the matrix where we eliminate the i'th row and j'th column from the given matrix(A). M is called minor.
+
+
+To find determinant of the matrix, we use this formula:
+
+det(A) = a(1,1) * A(1,1) + a(1,2) * A(1,2) +...+ a(1,n) * A(1,n)

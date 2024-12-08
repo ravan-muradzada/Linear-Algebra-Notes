@@ -1,0 +1,6 @@
+Determinat helps us when we want to determine the matrix has inverse or not (invertible or not).
+
+First, the matrix should be square, otherwise it is not invertible matrix. Then its determinant should be different than 0. If the determinant is zero, it is not invertible.
+
+If the matrix is invertible (det(A) != 0), it is called nonsingular matrix.
+If the matrix is not invertible (det(A) = 0), it is called singular matrix.

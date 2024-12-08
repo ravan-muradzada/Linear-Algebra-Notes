@@ -1,0 +1,7 @@
+To find inverse of matrix A, we can use this formula:
+
+A^-1 = (1 / det(A)) * adj(A).
+
+First, it is better to find its determinant (so, it determinant is zero, the matrix is not invertible).
+
+After that, we find adjoint of the matrix and multiply it with (1/det(A)).

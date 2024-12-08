@@ -1,0 +1,35 @@
+There are some specific features of determinant:
+
+
+1. If all the elements of any row or column are zero, its determinant is 0.
+
+2. If any row or column of a matrix is a scalar multiple of another row or column, the determinant of the matrix is zero.
+Example:
+[[1, 2, 3], [0, 1, 4], [5, 10, 15]] (first and the last row).
+
+3. If we change the places of rows or columns, the determinant's sign changes.
+Example:
+det([[a, b, c], [d, e, f], [g, h, k]]) = 10
+Thus: det([[a, b, c], [g, h, k], [d, e, f]]) = -10
+
+4. If we multiply any row or column with a number, we should multiply its determinant with this number, too.
+
+5. Adding or subtracting one row of a matrix to/from another row, even after multiplying it by a scalar, does not change the determinant of the matrix. It is just for rows, not columns.
+
+6. The determinant of triangular, upper or lower matrices is equal to the multiplication of diagonal elements.
+(Triangular: Except the main diagonal, all elements are zero; Upper: The lower part of the main diagonal is zero; Lower: The upper part of the main diagonal is zero).
+
+So, from here, we get another method to calculate determinant: We need to make zero lower part of the main diagonal (setting Upper diagonal matrix) and then find the multiplication of the diagonal elements.
+
+
+7. det(A*B) = det(A) * det(B)
+
+8. det(A^-1) = 1 / det(A)
+
+9. det(A^T) = det(A)
+
+10. det(A^n) = det(A)^n
+
+11. det(k*A) = k^n * det(A). Here n is the number of rows in A matrix.
+
+12. If only if det(A) != 0, then A is invertible (nonsingular) matrix. It also means, A can be written as the product of elementary matrices.

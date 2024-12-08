@@ -1,0 +1,25 @@
+To find out adjoint matrix of the given matrix, we should calculate the cofactors of each element of the given matrix and then set the new matrix using them. The tranpose of this matrix is adjoint matrix.
+
+A = [
+    [1, 2],
+    [3, 4]
+]
+
+A(11) = (-1)^2 * 4 = 4
+A(12) = (-1)^3 * 3 = -3
+A(21) = (-1)^3 * 2 = -2
+A(22) = (-1)^4 * 1 = 1
+
+[
+    [4, -3],
+    [-2, 1]
+]
+
+Its tranpose:
+
+[
+    [4, -2],
+    [-3, 1]
+]
+
+And that is adjoint matrix.
