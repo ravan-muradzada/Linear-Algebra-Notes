@@ -1,0 +1,60 @@
+Let A be an nxn matrix. The scalar ʎ is called eigen-value of A. 
+Ax = ʎx.
+The vector x is called eigen-vector.
+
+To find them, we use these properties:
+
+det(ʎ*I - A) = 0
+(ʎ*I - A)x = 0
+
+
+----------------------
+
+Example:
+
+A = [[2, -4], [-1, -1]]
+
+|A - ʎ*I| = 0
+
+A - ʎ*I = [[2-ʎ, -4], [-1, -1-ʎ]]
+using determinant, we find ʎ = 3, -2.
+
+
+Finding eugen-vectors:
+
+When ʎ=3
+(A-3*I)*v=0
+
+[
+    [-1, -4],
+    [-1, -4]
+]
+*
+[[x1], [x2]]
+=
+[[0], [0]]
+
+From this matrix, we always get one equation:
+-x1 - 4x2 = 0
+We should say x2 = a. x1 = -4a
+
+[[x1], [x2]] = a * [[-4], [1]]
+
+
+When ʎ=-2
+(-2I - A)x = 0
+(2I + A)x = 0
+
+[
+    [4, -4],
+    [-1, 1]
+]
+*
+[[x1], [x2]]
+=
+[[0], [0]]
+
+From here, [[x1], [x2]] = a*[[1], [1]]
+
+
+Result: Eigen-values are 3 and -2. Eugen-vectors are [[-4], [1]] and [[1], [1]].

@@ -1,0 +1,10 @@
+1) The multiplication of eugen-values is equal to a determinant of the matrix.
+
+
+2) The sum of eugen-values is equal to the sum of main diagonal elements in the given matrix. This sum is called trace: tr(A).
+
+
+3) Sometimes we are given characteristic polynom. We should make equal it to zero and find ʎ's.
+
+
+4) Eugen-values and eugen-vectors are used in diagonalization and finding high order powers of the matrices in linear algebra.
