@@ -1,0 +1,2 @@
+proj_u(v) = (<u, v> / <v, v>) * v 
+It is called orthogonal prejection of u onto v.

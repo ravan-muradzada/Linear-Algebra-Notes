@@ -1,0 +1,5 @@
+Orthonormal basis is a specific type of orthogonal basis.
+So, if the set is orthonormal basis, that means:
+
+1. It is already orthogonal basis.
+2. The lengths of the all vectors are 1.

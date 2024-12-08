@@ -1,0 +1,11 @@
+Let u, v and w be vectors in a vector space V and let c be any scalar. Inner producd is represented using <u, v>,
+
+1. <u, v> = <v, u>
+2. <u, v+w> = <u, v> + <u, w>
+3. c*<u, v> = <cu, v>
+4. <v, v> >= 0, if <v, v> == 0 that means v = 0.
+5. |<u, v>| <= ||u|| * ||v||. Here |<u, v>| means, the absolute value of inner product of u and v.
+6. ||u + v|| <= ||u|| + ||v||
+7. ||u + v||^2 = ||u||^2 + ||v||^2
+
+

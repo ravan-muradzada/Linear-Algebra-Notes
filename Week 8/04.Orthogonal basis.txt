@@ -1,0 +1,7 @@
+Orthogonal basis is a orthogonal set type. However, there are other conditions.
+
+All conditions to make set Orthogonal basis:
+
+1. This set should be orthogonal set.
+2. They should span R^n space.
+3. They should be linear independent.

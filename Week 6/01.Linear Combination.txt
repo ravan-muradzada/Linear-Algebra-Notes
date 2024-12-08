@@ -29,17 +29,10 @@ Why Are Linear Combinations Important?
 
 Linear combinations are fundamental in linear algebra because they help define many key concepts, such as:
 
--Span:
-The set of all possible linear combinations of a set of vectors forms the span of those vectors. If the span covers the entire vector space, the vectors are said to span the vector space.
+-Span
 
--Linear Independence:
-A set of vectors is linearly independent if the only way to obtain the zero vector as a linear combination is by setting all coefficients to zero. Otherwise, the vectors are linearly dependent.
+-Linear Independence
 
--Basis and Dimension:
-A basis of a vector space is a set of linearly independent vectors whose span is the entire space. The dimension of the vector space is the number of vectors in a basis.
+-Basis and Dimension
 
--Solving Systems of Linear Equations:
-Systems of linear equations can be interpreted as finding linear combinations of vectors that satisfy certain conditions.
-
-
-Linear combinations are essential for understanding vector spaces, solving linear equations, and many applications in mathematics, physics, engineering, and computer science.
+-Solving Systems of Linear Equations

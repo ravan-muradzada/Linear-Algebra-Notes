@@ -1,0 +1,3 @@
+This is a set vectors where all vectors are orthogonal among each other. 
+Imagine, set S = {v1, v2, v3}.
+If it is orthogonal set, that means, v1 is orthogonal with v2 and v3. Moreover, v2 should be orthogonal with v3.

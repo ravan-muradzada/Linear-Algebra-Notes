@@ -1,0 +1,16 @@
+1) Length of a vector:
+v = (v1, v2, ..., vn)
+||v|| = sqrt(v1^2 + v2^2 +..+ vn^2)
+
+
+2) Unit vector in the direction of v:
+u = v / ||v||
+It has length 1 and the same direction as v. This is called unit vector(u) in the direction of v.
+
+
+3) Distance between two vectors:
+d(u, v) = ||u - v|| = sqrt((u1 - v1)^2 + (u2 - v2)^2)
+
+
+4) Dot product and the angle betweeen two vectors:
+cos(a) = (u1*v1 - u2*v2) / (||u|| * ||v||)

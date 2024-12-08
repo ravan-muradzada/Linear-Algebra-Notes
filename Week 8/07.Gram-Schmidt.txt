@@ -1,0 +1,28 @@
+Gram-Schmidt method is a way to convert the set to ortoghonal set.
+
+Imagine we have a set which is not ortoghonal: B = {v1, v2, .., vn}
+We need to get its ortoghonal version. Let's call this version B' and we want to find it. B' will be {w1, w2, .., wn}
+
+All elements in B' will be different from B, except the first one. 
+So, w1 = v1.
+
+To find w2:
+
+w2 = v2 - (<v2, w1> / <w1, w1>) * w1
+
+Then we should find w3:
+w3 = v3 - (<v3, w1> / <w1, w1>)*w1 - (<v3, w2> / <w2, w2>)*w2
+
+
+We can express this with formula:
+
+wn = vn - (<vn, w1> / <w1, w1>)*w1 - (<vn, w2> / <w2, w2>)*w2 - ... - (<vn, w(n-1)> / <w(n-1), w(n-1)>) * w(n-1)
+
+wn = vn - sum(<vn, wi> / <wi, wi>)*wi {i in the range: [1, n-1]}.
+
+From these equations, we will get vector set and this is ortoghonal set.
+However, if we want to convert it to ortoghonormal set, we need to divide each vector to its length:
+
+ui = wi / ||wi||
+
+So we should find the length of each vector and divide its components to this.
