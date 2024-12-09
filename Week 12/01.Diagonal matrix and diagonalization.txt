@@ -1,0 +1,15 @@
+Diagonalization is the process of finding a diagonal matrix D that is similar to a given square matrix A.
+A = P * D * P^-1
+
+D -  is a diagonal matrix (all off-diagonal elements are 0).
+P -  is an invertible matrix whose columns are the eigenvectors of A.
+D contains the eigenvalues of A on its diagonal.
+
+------
+Steps:
+
+To diagonalize a square matrix, first, find the eigen-values of the matrix by solving the characteristic equation det(ʎ*I - A) = 0, where ʎ represents eigen-values. Next, for each eigen-values we should find eigen-vectors. Then we create D matrix, so we put the ʎ's to main diagonal and make other cells zero, so that is diagonalized matrix.
+Then we should set a matrix P whose columns are the eigen-vectors. 
+
+To check whether the matrix is diagonalizible or not, we should pay attention two things: If ʎ's are completely different, that means the matrix is diagonalizible. However, if they are equal, we cannot exactly say it is not diagonalizible. So we need to find P matrix and try to find its determinant. If its determinant is zero, that is not diagonalizible, otherwise it is diagonalizible.
+

@@ -1,0 +1,3 @@
+Diagonalisation can be used to obtain large powers of a given matrix. So, imagine we are given matrix A and wanted its n'th power. 
+We need to write it as A = P*D*P^-1.
+So then we just need to change the diagonal elements of D with their n'th power.

@@ -1,0 +1,2 @@
+A square matrix P is called orthogonal if it is invertible and if:
+P^-1 = P^T.

@@ -7,7 +7,7 @@ To find them, we use these properties:
 det(ʎ*I - A) = 0
 (ʎ*I - A)x = 0
 
-
+Always we should say a to the last variable.
 ----------------------
 
 Example:

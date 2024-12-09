@@ -1,0 +1,10 @@
+Imagine we have matrix A. If A = A^T, this is symmetric, otherwise nonsymmetric matrix.
+
+
+1) If A is a real symmetric nxn matrix, then its eugen-values are all real.
+
+2) For symmetric matrix, eigen-vectors are linearly independent.
+
+3) For symmetric matrix, two eigen-vectors corresponding two distinct eigen-values are orthogonal to each other.
+
+4) All real symmetric matrices are diagonalisable.

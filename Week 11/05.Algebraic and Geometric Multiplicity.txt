@@ -1,0 +1,15 @@
+Algebraic multiplicity refers to the number of times a particular eigenvalue ʎ appears.
+
+For example, if the characteristic equation of a matrix is ʎ1 = ʎ2 = ʎ3 = 2 and ʎ4 = ʎ5 = -1, then:
+- The eigenvalue ʎ = 2 has an algebraic multiplicity of 3.
+- The eigenvalue ʎ = -1 has an algebraic multiplicity of 2.
+
+Algebraic multiplicity tells us how many times an eigenvalue is repeated in the spectrum of the matrix. It is always greater than or equal to the geometric multiplicity, which refers to the number of linearly independent eigenvectors associated with that eigenvalue.
+
+---------------------------------------------
+
+The number of eigen-vectors for ʎ's is geometric multiplicity.
+
+---------------------------------------------
+
+For a matrix to be diagonalizable, the geometric multiplicity of each eigenvalue must equal its algebraic multiplicity.

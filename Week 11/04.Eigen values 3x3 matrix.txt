@@ -1,0 +1,12 @@
+Finding eigen-values and eigen-vector for 3x3 matrix, we should do similar process. So we just need to use this formula: 
+det(ʎ*I - A) = 0. From here, we will get three ʎ's. 
+
+If three ʎ's are not equal to each other, we just implement this formula: (ʎ*I - A)x = 0 and solve the problem using Gaussian-elimination method. Note that, the last row should only contain full zeros. If not, that refers, there is a problem while solving. We should always say a to last x (x3 here). So x3 = a and we put it into the equations and find other variables.
+
+If two of ʎ are equal to each other, first it is better to find eugen-vector from ʎ which is not the same.
+Then we need to find the equal ones. We just simply use the formula and set the matrix, then solve using Gaussian-elimination method. At last, the second and third row will be completely zero, so we will have two independent variables (a and b). We should say x3 = a and x2 = b and find x1 using them. Imagine we got something like that: 
+x1 = -a-b/2; x2 = b; x3 = a.
+So we set the vector: [-a-b/2, b, a] and then divide it two parts like that: [-a, 0, a] + [-b/2, b, 0]. Then we convert it to that:
+a * [-1, 0, 1] + b[-0.5, 1, 0]. How to set these matrices? The elements in the matrices represent [x1, x2, x3]. So how much a is present in x1 we put this there and so on.
+One of the eugen-vector is [-1, 0, 1] and another is [-0.5, 1, 0].
+So we always get two vectors from one ʎ in 3x3 matrix (when ʎ1 = ʎ2).

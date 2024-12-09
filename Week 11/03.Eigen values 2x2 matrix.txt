@@ -1,0 +1,16 @@
+For 2x2 matrices, we can find three kind of eigen-values:
+
+1. ʎ1 and ʎ2 (ʎ1 != ʎ2)
+
+2. ʎ1 and ʎ2 (ʎ1 == ʎ2)
+
+3. ʎ1 and ʎ2 are imaginary numbers.
+
+--------------------
+
+For the first case, we find two ʎ's and put them in the formula and at the last we find two eigen-vectors.
+
+For the second case, we find two equal ʎ's, so it is enough to put it once in the formula and find one eigen-vector.
+
+For the third case, we find two imaginary numbers for ʎ's. We put one of them into the formula. While giving a to one of the variable, it is better to choose x2 always. We do not need to do this process for the second eigen-vector. So it is enough to change sign of imaginary part of the first found eigen-vector.
+
