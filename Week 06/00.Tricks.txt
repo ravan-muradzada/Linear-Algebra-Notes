@@ -1,0 +1,7 @@
+1) How to determine whether the given set spans R^n or not?
+
+We need to write as a matrix. So each vector should be column in the matrix. Then we need to use REF. If all columns have pivots, that means this set spans R^n, otherwise no.
+
+
+2) How to find a basis of the set?
+
